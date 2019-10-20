@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Name: Dale Dybvig
+Date Created: 6/28/19
+Most recent revision: 8/8/19
+note 8/8/19: had trouble with the home icon. leaving it as an img but i would like to figure out how to make it a font so that the same text styles would apply. didn't have much luck googling it.
+-->
+<html lang="en">
+
+	<head>
+		<script type="text/JavaScript" src="contact.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Contact Dale's Slop Emporium </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="Styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	<style>
+		label {
+			font-weight: bold;
+		}
+		fieldset {
+			font-weight: bold;
+		}
+		form {
+			margin-bottom: 1px;
+		}
+	</style>
+	</head>
+	
+	<main>
+	<body>
+	<noscript><div class="alert">This page uses JavaScript. Please enable JavaScript to get the best user experience!</div></noscript>
+	<div class="container">	
+		<header>[Contact Us] </br>
+		Dale's is opening a new location! Details coming soon!
+		</header>
+		
+		
+		<h1 style="font-style:italic">Dale's Slop Emporium</h1>
+			
+			<nav>
+				<p><a class="btn badge-pill" href="index.html"><img src="svg/home.svg"/></i></a></p>
+				<p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+				<p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+			</nav>
+		<div style="clear:both"></div>
+		<p>Whether you are interested in catering, a private event, giving us feedback, or anything else, Dale's Slop Emporium would love to hear from you! Please fill out this form and hit submit when you are done. <span style="font-weight:bold">Bold </span>fields are required.</p>
+			<form name="contact" onsubmit= "return validateItems();" action="submit.html" method="POST">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" name="name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="text" class="form-control" id="email" name="email">
+			</div>
+			<div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" class="form-control" id="phone" name="phone">
+			</div>
+			<div class="form-group">
+				<label for="reason">Reason for Inquiry:</label>
+				<select id="reason" name="reason">
+				<option value="default" selected>Catering</option>
+				<option value="privateparty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option> <br />
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="info" style="font-weight: normal">Additional Information:</label>
+				<textarea id="info" name="info"></textarea>
+			</div>
+			<div class="form-group">
+				<fieldset>
+				Have you been to the restaurant?
+				<input type="radio" id="choice1" name="questionairre" value="yes">
+				<label for="choice1">Yes</label>
+				<input type="radio" id="choice2" name="questionairre" value="no">
+				<label for="choice2">No</label>
+				</fieldset>
+			</div>
+			<div class="form-group">
+				<fieldset>
+				Best days to contact you:
+				<input type="checkbox" id="monday" name="contact-day" value="monday">
+				<label for="monday">M</label>
+				<input type="checkbox" id="tuesday" name="contact-day" value="tuesday">
+				<label for="tuesday">T</label>
+				<input type="checkbox" id="wednesday" name="contact-day" value="wednesday">
+				<label for="wednesday">W</label>
+				<input type="checkbox" id="thursday" name="contact-day" value="thursday">
+				<label for="thursday">Th</label>
+				<input type="checkbox" id="friday" name="contact-day" value="friday">
+				<label for="friday">F</label>
+				</fieldset>
+			</div>
+				<button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+			
+			</form>
+			
+		<footer>
+			<p>5000 E. 38th St., Minneapolis, MN, 55407 </br>612-444-4444</p>
+		</footer>
+	</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+	</main>
+</html>
